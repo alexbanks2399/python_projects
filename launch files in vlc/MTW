@@ -1,0 +1,16 @@
+import subprocess
+import pyautogui
+import time
+
+#Launch VLC player
+subprocess.Popen([r"C:\My Documents\Software\VLC\vlc.exe"])
+
+#Wait for VLC to open
+time.sleep(1.5)
+
+#Opens folder containing files
+pyautogui.hotkey('ctrl', 'f')
+pyautogui.typewrite('C:\My Documents\Documents\Stuff to Watch\TV Series\Mock the Week\All') #path to folder
+pyautogui.hotkey('tab', 'return')
+pyautogui.typewrite('r')
+pyautogui.typewrite('n')
