@@ -1,0 +1,14 @@
+#on hold for now, might come back in future
+
+import subprocess
+import time
+
+#Open Minesweeper
+subprocess.Popen([r"C:\Program Files\Microsoft Games\Minesweeper\Minesweeper.exe"])
+
+#Wait for Minesweeper to open
+time.sleep(1.5)
+
+
+#main menu
+def main_menu(self):
